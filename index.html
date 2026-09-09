@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/main.css">
+   <title>PREPTRACK - TRACK YOUR PROCESS & STAY AHEAD</title>
+</head>
+<body>
+   <header>
+      <nav>
+         <img src="assets/img/logo-preptrack.png" alt="PREPTRACK LOGO">
+         <!--<span class="btn">KNOW MORE</span>-->
+      </nav>
+   </header>
+   <section class="hero">
+      <h1>COMING <span class="accent-txt">SOON...</span></h1>
+   </section>
+   <canvas id="stars"></canvas>
+   <script src="js/main.js"></script>
+   <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+
+   <script>
+   const lenis = new Lenis({
+   autoRaf: true,
+   duration: 1.2,
+   smoothWheel: true,
+   wheelMultiplier: 1,
+   touchMultiplier: 2,
+   infinite: false
+   });
+   </script>
+</body>
+</html>

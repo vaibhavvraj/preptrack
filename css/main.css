@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+   --background-color: #030303;
+   --primary-color: #ffffff;
+   --secondary-color: #e7bc87;
+   --accent-color: #888989;
+   --the-green: #7cafa7;
+   --the-red: #fd7070;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  overflow-x: hidden !important;
+  font-size: 16px; /* Sets the default base size for rem units */
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+   font-family: 'Montserrat';
+   color: var(--primary-color);
+}
+.accent-txt {
+   color: var(--accent-color);
+}
+.btn {
+   display: flex;
+   align-items: center;
+   border: none;
+   padding: 0rem 1.8rem;
+   height: 2.5rem;
+   border-radius: 30px;
+   background-color: var(--primary-color);
+   font-weight: 500;
+   color: var(--background-color);
+   font-size: 14px;
+   cursor: pointer;
+   transition: all 300ms ease;
+}
+.btn:hover {
+   background-color: #ededed;
+}
+nav {
+   display: flex;
+   padding: 1.5rem 4rem;
+   justify-content: space-between;
+   align-items: center;
+}
+nav img {
+   width: auto;
+   max-width: 15rem;
+   cursor: pointer;
+}
+
+.hero {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;   
+   padding-top: 10rem;
+   white-space: nowrap;
+}
+.hero h1 {
+   font-size: 2.5rem;
+}
+#stars {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: -1;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 425px) {
+  nav {
+   display: flex;
+   justify-content: space-between;
+   padding: 0.5rem 1rem;
+  }
+  nav img {
+   max-width: 10rem;
+  }
+  .hero {
+   padding-top: 12rem;
+  }
+  .hero h1 {
+   font-size: 1.5rem;
+  }
+  .btn { 
+   font-size: 12px;
+   height: 2rem;
+   padding: 0 0.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+ 
+}
